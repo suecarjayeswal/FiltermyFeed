@@ -1,0 +1,31 @@
+"""
+Evaluate the semantic or contextual relevance of the given textString to the list of keywords provided. Please assess the relation deeply.
+
+Text String:
+{text_to_evaluate}
+Keywords:
+{keyword_list}
+
+Calculate the original strength of the textString's relation to the keywords in scale 0 to 100.
+
+Now, if original strength exceeds upper_strength_limit i.e {upper_thres} consider the scenario where we want to decrease the strength score to a new_strength that is below a lower_threshold i.e {lower_thres}. Remove words, phrases, or anything from the textString to achieve this while preserving the overall context to the extent possible.
+
+Return a dictionary with the following information:
+{{'original_strength': original_strength,
+'list_of_words_removed': words_removed,
+'new_strength': new_strength}}
+"""
+
+
+"""
+Evaluate the semantic or contextual relevance of the given textString to the list of keywords provided. Please assess the relation deeply.
+
+Text String:
+{text_to_evaluate}
+Keywords:
+{keyword_list}
+
+Calculate the original strength of the textString's relation to the keywords in scale 0 to 100. Just return the scale number only.
+"""
+
+
