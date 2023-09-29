@@ -1,7 +1,22 @@
 from fastapi import FastAPI
 from enum import Enum
 
+from fastapi.middleware.cors import CORSMiddleware
+
+
+origins = [
+    "*"
+]
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 
 #Basic Example for returning text
 @app.get("/")
