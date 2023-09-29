@@ -1,0 +1,17 @@
+{
+    "name": "BlurrOut",
+    "version": "1.0",
+    "description": "Censor the internet by blocking certain words!",
+    "manifest_version": 3,
+    "permissions": ["declarativeContent", "activeTab", "tabs",  "storage", "contextMenus"],
+    "background": {
+        "service_worker": "startup.js"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["filter.js"]
+    }],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
