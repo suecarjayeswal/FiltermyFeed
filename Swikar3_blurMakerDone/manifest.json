@@ -1,0 +1,18 @@
+{
+    "name":"BlurrOutt",
+    "version": "3.0",
+    "description": "Blurr Out Bro vz3",
+    "manifest_version": 3,
+    "permissions": ["tabs","activeTab","declarativeContent","storage","contextMenus"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "run_at": "document_start",
+        "js":["textDealer.js","content.js"]
+    }],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "startup.js"
+    }
+}
