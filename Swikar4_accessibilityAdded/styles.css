@@ -1,0 +1,148 @@
+body {
+    background-color: black;
+}
+
+.inputWrapper {
+    text-align: center;
+}
+
+.inputWrapper > input {
+    text-align: left;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: wheat;
+}
+
+input[type="search"]:-moz-placeholder {
+    color: wheat;
+}
+
+input[type="search"]::-moz-placeholder {
+    color: wheat;
+}
+
+input[type="search"]:-ms-input-placeholder {
+    color: wheat;
+}
+
+#wordInput[type="search"]:focus {
+    outline: none;
+    background-color: black;
+}
+
+#wordInput {
+    color: black;
+    border: none;
+    box-shadow: inset;
+    opacity: 0.48;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 2px;
+}
+
+#wrapper {
+    background-color: black;
+}
+
+#listContainer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.textElems {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+#currentSite {
+    cursor: pointer;
+}
+
+.itemStyle {
+    background-color: #2d2e31;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 10px;
+    margin-top: 3px;
+    padding: 3px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.tab {
+    cursor: pointer;
+    margin: 3px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: x-small;
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+
+.tabGroup {
+    text-align: center;
+}
+
+hr {
+    color: white;
+    background-color: white;
+    border: 1px solid white;
+    height: 1px;
+    width: 70%;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

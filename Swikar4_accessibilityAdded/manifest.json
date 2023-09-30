@@ -1,0 +1,18 @@
+{
+    "name":"BlurrOutt",
+    "version": "4.0",
+    "description": "Blurr Out Bro vz3 with accessibility features and autoscroll after refresh",
+    "manifest_version": 3,
+    "permissions": ["tabs","activeTab","declarativeContent","storage","contextMenus"],
+    "content_scripts": [{
+        "matches": ["<all_urls>","file:///","http://*/*","https://*/*"],
+        "run_at": "document_start",
+        "js":["textDealer.js","content.js"]
+    }],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "startup.js"
+    }
+}
