@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="tabGroup">
+            <div id="onTab" class="tab">
+                ON
+            </div>
+
+            <div id="offTab" class="tab">
+                OFF
+            </div>
+        </div>
+        <h1 class="textElems">BlurrOut!</h1>
+        <h5 class="textElems" id="currentSite">Current Site: </h5>
+
+        <div class="inputWrapper">
+            <input type="text" placeholder="Add Word..." id="wordInput">
+        </div>
+        <hr id="listDivider">
+        </hr>
+        <div class="tabGroup">
+            <div id="wordsTab" class="tab">
+                Blocked Words
+            </div>
+
+            <div id="urlsTab" class="tab">
+                Blocked Urls
+            </div>
+        </div>
+        <ul id="listContainer">
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+            <li>fourth</li>
+        </ul>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
